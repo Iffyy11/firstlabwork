@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media — HTML5 Practical</title>
+	<meta name="description" content="Media page: responsive images, audio, video with captions, and figures.">
+	<link rel="canonical" href="https://iffyy11.github.io/firstlabwork/media.html">
+</head>
+<body>
+	<a href="#main">Skip to content</a>
+	<header>
+		<h1>Media Examples</h1>
+		<nav aria-label="Main navigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="extras.html">Extras</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="main">
+		<article>
+			<section>
+				<h2>Responsive Image</h2>
+				<figure>
+					<picture>
+						<source srcset="assets/images/hero-large.jpg" media="(min-width: 900px)">
+						<source srcset="assets/images/hero-medium.jpg" media="(min-width: 600px)">
+						<img src="assets/images/hero-small.jpg" alt="A scenic hero image for HTML5 demo" width="400" height="200">
+					</picture>
+					<figcaption>A responsive hero image using &lt;picture&gt; and &lt;figcaption&gt;.</figcaption>
+				</figure>
+			</section>
+			<section>
+				<h2>Audio Example</h2>
+				<audio controls>
+					<source src="assets/audio/sample.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</section>
+			<section>
+				<h2>Video Example with Captions</h2>
+				<video controls width="400">
+					<source src="assets/video/sample.mp4" type="video/mp4">
+					<source src="assets/video/sample.webm" type="video/webm">
+					<track src="assets/captions/sample.vtt" kind="captions" srclang="en" label="English" default>
+					Your browser does not support the video tag.
+				</video>
+				<p>Toggle CC to view captions.</p>
+			</section>
+		</article>
+	</main>
+	<footer>
+		<address>
+			Contact: <a href="mailto:you@example.com">you@example.com</a><br>
+			Department of Computing, JKUAT
+		</address>
+		<p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
+	</footer>
+</body>
+</html>
