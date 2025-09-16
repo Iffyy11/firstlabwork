@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About — HTML5 Practical</title>
-	<meta name="description" content="About page: history, lists, and semantic HTML5 elements.">
-	<link rel="canonical" href="https://iffyy11.github.io/firstlabwork/about.html">
+  <meta charset="utf-8">
+  <title>HTML5 Practical — About</title>
+  <meta name="description" content="About page with history, lists, and definitions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://example.com/about.html">
 </head>
 <body>
-	<a href="#main">Skip to content</a>
-	<header>
-		<h1>About This Project</h1>
-		<nav aria-label="Main navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="extras.html">Extras</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="main">
-		<article>
-			<section>
-				<h2>Short History of HTML</h2>
-				<p>HTML was first introduced in <time datetime="1991-08-06">1991</time> by Tim Berners-Lee.</p>
-				<ul>
-					<li>1991: HTML debut</li>
-					<li>1995: HTML 2.0 standard</li>
-					<li>1999: HTML 4.01</li>
-					<li>2014: HTML5 finalized</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Major Milestones</h2>
-				<ol>
-					<li>Creation of the World Wide Web</li>
-					<li>Introduction of CSS and JavaScript</li>
-					<li>Adoption of HTML5</li>
-				</ol>
-			</section>
-			<section>
-				<h2>Key Terms</h2>
-				<dl>
-					<dt>HTML</dt>
-					<dd>HyperText Markup Language, the standard for web documents.</dd>
-					<dt>Element</dt>
-					<dd>A component of an HTML document, such as <code>&lt;header&gt;</code> or <code>&lt;nav&gt;</code>.</dd>
-					<dt>Semantic</dt>
-					<dd>Using tags that describe their meaning and role in the document.</dd>
-				</dl>
-			</section>
-		</article>
-	</main>
-	<footer>
-		<address>
-			Contact: <a href="mailto:you@example.com">you@example.com</a><br>
-			Department of Computing, JKUAT
-		</address>
-		<p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
-	</footer>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header>
+    <h1>About This Project</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <section aria-labelledby="history-heading">
+        <h2 id="history-heading">Short History</h2>
+        <p>This project demonstrates HTML5 semantics, accessibility, and media without CSS or JavaScript.</p>
+      </section>
+
+      <section aria-labelledby="unordered-heading">
+        <h2 id="unordered-heading">Unordered List</h2>
+        <ul>
+          <li>Semantic layout</li>
+          <li>Accessibility features</li>
+          <li>Media embedding</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="ordered-heading">
+        <h2 id="ordered-heading">Ordered List</h2>
+        <ol>
+          <li>Create repository</li>
+          <li>Upload files</li>
+          <li>Enable GitHub Pages</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="definition-heading">
+        <h2 id="definition-heading">Definition List</h2>
+        <dl>
+          <dt>HTML5</dt>
+          <dd>The markup language for building websites.</dd>
+          <dt>Accessibility</dt>
+          <dd>Designing content usable by everyone.</dd>
+        </dl>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Ismahan.</p>
+  </footer>
 </body>
 </html>

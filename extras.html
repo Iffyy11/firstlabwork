@@ -1,91 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Extras — HTML5 Practical</title>
-	<meta name="description" content="Extras page: tables, details, dialog, progress, meter, blockquote, and micro-elements.">
-	<link rel="canonical" href="https://iffyy11.github.io/firstlabwork/extras.html">
+  <meta charset="utf-8" />
+  <title>HTML5 Practical — Extras</title>
+  <meta name="description" content="HTML5 extras: tables, details, dialog, progress, meter." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://example.com/extras.html" />
 </head>
 <body>
-	<a href="#main">Skip to content</a>
-	<header>
-		<h1>HTML5 Extras</h1>
-		<nav aria-label="Main navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="extras.html">Extras</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="main">
-		<article>
-			<section>
-				<h2>Tabular Data</h2>
-				<table>
-					<caption>Course Hours Overview</caption>
-					<thead>
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">Topic</th>
-							<th scope="col">Hours</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>HTML5 Semantics</td>
-							<td>6</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Advanced HTML5 APIs</td>
-							<td>6</td>
-						</tr>
-					</tbody>
-					<tfoot>
-						<tr>
-							<th scope="row" colspan="2">Total</th>
-							<td>12</td>
-						</tr>
-					</tfoot>
-				</table>
-			</section>
-			<section>
-				<h2>Interactive Elements</h2>
-				<details>
-					<summary>What is semantic HTML?</summary>
-					<p>Semantic HTML uses meaningful tags that describe their content and role.</p>
-				</details>
-				<dialog open>
-					<p>This is an open dialog for demonstration (no JS needed).</p>
-				</dialog>
-				<p>Reading progress: <label for="progress1">Progress</label> <progress id="progress1" value="40" max="100">40%</progress></p>
-				<p>CPU load: <label for="meter1">Load</label> <meter id="meter1" min="0" max="100" low="30" high="80" optimum="50" value="65">65%</meter></p>
-			</section>
-			<section>
-				<h2>Quotes & Microcontent</h2>
-				<blockquote cite="https://www.w3.org/">
-					“Web for All. Web on Everything.”
-					<footer>— <cite>W3C</cite></footer>
-				</blockquote>
-				<p>Important: <mark>HTML5 is the current standard.</mark></p>
-				<p>Sample code: <code>&lt;details&gt;...&lt;/details&gt;</code></p>
-				<p>Keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>P</kbd></p>
-				<p>Sample output: <samp>Success!</samp></p>
-				<p>Acronym: <abbr title="JavaScript Object Notation">JSON</abbr></p>
-				<p>Published: <time datetime="2025-09-15">September 15, 2025</time></p>
-			</section>
-		</article>
-	</main>
-	<footer>
-		<address>
-			Contact: <a href="mailto:you@example.com">you@example.com</a><br>
-			Department of Computing, JKUAT
-		</address>
-		<p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
-	</footer>
+  <a href="#main">Skip to content</a>
+  <header>
+    <h1>Extras</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="extras.html" aria-current="page">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <section>
+        <h2>Table Example</h2>
+        <table>
+          <caption>Weekly Study Plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Week</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th><td>HTML5 Semantics</td><td>6</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th><td>Advanced HTML5 APIs</td><td>6</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Total</th><td>12</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Interactive Elements</h2>
+        <details>
+          <summary>What is semantic HTML?</summary>
+          <p>Semantic HTML uses meaningful tags that describe their content and role.</p>
+        </details>
+
+        <dialog open>
+          <p>This is an open dialog for demonstration (no JS needed).</p>
+        </dialog>
+
+        <p>Reading progress: <progress value="40" max="100">40%</progress></p>
+        <p>CPU load: <meter min="0" max="100" low="30" high="80" optimum="50" value="65">65%</meter></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> Your Name</p>
+  </footer>
 </body>
 </html>
