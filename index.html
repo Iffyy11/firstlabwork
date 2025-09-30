@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>HTML5 Practical — Home</title>
-  <meta name="description" content="A pure-HTML5 site demonstrating modern semantic elements, media, and accessibility." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="https://example.com/" />
+  <meta name="description" content="A pure-HTML5 site demonstrating modern semantic elements, media, and accessibility.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <a href="#main">Skip to content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header>
     <h1>HTML5 Practical</h1>
-    <nav aria-label="Primary">
+    <nav aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -28,14 +29,14 @@
         <p><time datetime="2025-09-11">September 11, 2025</time></p>
       </header>
 
-      <section>
+      <section class="card">
         <h3>Why HTML5 Semantics Matter</h3>
         <p>Use of <mark>semantic elements</mark> improves accessibility and SEO.</p>
         <p>Keyboard shortcut example: <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
         <p>Inline code sample: <code>&lt;main&gt;</code> landmarks assist screen readers.</p>
       </section>
 
-      <section>
+      <section class="card">
         <h3>Internal Anchors</h3>
         <p>Jump to the <a href="#more-info">More Info</a> section on this page.</p>
       </section>
@@ -57,7 +58,7 @@
 
       <footer>
         <address>
-          Contact: <a href="ismahan5@gmail.com">ismahan5@gmail.com</a><br>
+          Contact: <a href="mailto:ismahan5@gmail.com">ismahan5@gmail.com</a><br>
           Department of Computing, USIU
         </address>
       </footer>
@@ -65,7 +66,7 @@
   </main>
 
   <footer>
-    <p>&copy; <time datetime="2025">2025</time> Your Name. All rights reserved.</p>
+    <p>&copy; <time datetime="2025">2025</time> Ismahan. All rights reserved.</p>
   </footer>
 </body>
 </html>

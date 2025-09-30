@@ -1,0 +1,27 @@
+# Git files
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+
+# Node.js (if applicable)
+node_modules
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build artifacts
+dist/
+build/

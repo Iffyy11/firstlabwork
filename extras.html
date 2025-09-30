@@ -5,6 +5,7 @@
   <title>HTML5 Practical — Extras</title>
   <meta name="description" content="HTML5 extras: tables, details, dialog, progress, meter." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="canonical" href="https://example.com/extras.html" />
 </head>
 <body>
@@ -25,29 +26,31 @@
     <article>
       <section>
         <h2>Table Example</h2>
-        <table>
-          <caption>Weekly Study Plan</caption>
-          <thead>
-            <tr>
-              <th scope="col">Week</th>
-              <th scope="col">Topic</th>
-              <th scope="col">Hours</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th><td>HTML5 Semantics</td><td>6</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th><td>Advanced HTML5 APIs</td><td>6</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th scope="row" colspan="2">Total</th><td>12</td>
-            </tr>
-          </tfoot>
-        </table>
+        <div class="table-wrapper">
+          <table>
+            <caption>Weekly Study Plan</caption>
+            <thead>
+              <tr>
+                <th scope="col">Week</th>
+                <th scope="col">Topic</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th><td>HTML5 Semantics</td><td>6</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th><td>Advanced HTML5 APIs</td><td>6</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total</th><td>12</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </section>
 
       <section>
